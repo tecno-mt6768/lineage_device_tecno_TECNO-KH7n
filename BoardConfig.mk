@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/FULL-64
+DEVICE_PATH := device/tecno/KH7n
 
 # A/B
 AB_OTA_UPDATER := true
@@ -34,7 +34,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := TECNO-KH7n
+TARGET_BOOTLOADER_BOARD_NAME := KH7n
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -49,8 +49,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := FULL-64_defconfig
-TARGET_KERNEL_SOURCE := kernel/tecno/FULL-64
+TARGET_KERNEL_CONFIG := KH7n_defconfig
+TARGET_KERNEL_SOURCE := kernel/tecno/KH7n
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -91,7 +91,6 @@ TARGET_VENDOR_DLKM_PROP += $(DEVICE_PATH)/vendor_dlkm.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Security patch level
@@ -105,4 +104,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/tecno/FULL-64/BoardConfigVendor.mk
+include vendor/tecno/KH7n/BoardConfigVendor.mk
