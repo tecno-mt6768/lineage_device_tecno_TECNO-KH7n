@@ -1,4 +1,4 @@
-# Android device tree for TECNO  (FULL-64)
+# Android device tree for TECNO  (KH7n)
 
 ```
 #
