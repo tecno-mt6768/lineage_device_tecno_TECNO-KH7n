@@ -14,15 +14,27 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from KH7n device
 $(call inherit-product, device/tecno/KH7n/device.mk)
 
+
+# AfterLife flags
+AFTERLIFE_MAINTAINER := Isus203 (@isus203)
+
+# Gapps/Vanilla Flags
+AFTERLIFE_GAPPS=true
+
 PRODUCT_BRAND := TECNO
 PRODUCT_DEVICE := KH7n
-PRODUCT_MANUFACTURER := Tecno Mobility Limited
 PRODUCT_NAME := lineage_KH7n
-PRODUCT_MODEL := TECNO KH7n
+PRODUCT_MODEL := Tecno Spark 9 Pro
+PRODUCT_MANUFACTURER := Tecno Mobility Limited
 
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
 
+TARGET_VENDOR := tecno
+TARGET_VENDOR_PRODUCT_NAME := KH7n
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=TECNO-KH7n \
+    PRODUCT_NAME=KH7n-OP \
     PRIVATE_BUILD_DESC="sys_tssi_64_tecno-user 12 SP1A.210812.016 585038 release-keys"
 
 BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/240416V962:user/release-keys
