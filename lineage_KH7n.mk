@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from KH7n device
-$(call inherit-product, device/tecno/KH7n/device.mk)
+$(call inherit-product, device/TECNO/KH7n/device.mk)
 
 
 # AfterLife flags
