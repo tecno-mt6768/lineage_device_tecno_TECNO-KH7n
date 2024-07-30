@@ -159,4 +159,4 @@ TARGET_ODM_DLKM_PROP += $(DEVICE_PATH)/config/prop/odm_dlkm.prop
 TARGET_VENDOR_DLKM_PROP += $(DEVICE_PATH)/config/prop/vendor_dlkm.prop
 
 # Inherit the proprietary files
-include vendor/tecno/KH7n/BoardConfigVendor.mk
+include vendor/TECNO/KH7n/BoardConfigVendor.mk
