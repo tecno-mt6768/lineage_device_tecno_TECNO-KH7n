@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/KH7n
+DEVICE_PATH := device/TECNO/KH7n
 
 # A/B
 AB_OTA_UPDATER := true
@@ -54,7 +54,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 BOARD_KERNEL_ARCH := arm64
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_CONFIG := KH7n_defconfig
-BOARD_KERNEL_SOURCE := kernel/tecno/KH7n
+BOARD_KERNEL_SOURCE := kernel/TECNO/KH7n
 
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --board $(BOARD_NAME)
