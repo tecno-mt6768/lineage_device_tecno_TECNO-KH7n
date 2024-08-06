@@ -131,8 +131,7 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     meta_init.vendor.rc \
     multi_init.rc \
-    init.recovery.mt6768.rc \
-    ueventd.mt6768.rc
+    init.recovery.mt6768.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
