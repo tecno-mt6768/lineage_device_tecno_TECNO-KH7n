@@ -29,7 +29,7 @@ AB_OTA_PARTITIONS += \
     vendor \
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
 
 # Fastbootd
