@@ -139,9 +139,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/prop/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/prop/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/config/prop/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
-TARGET_ODM_PROP += $(DEVICE_PATH)/config/prop/odm.prop
-TARGET_ODM_DLKM_PROP += $(DEVICE_PATH)/config/prop/odm_dlkm.prop
-TARGET_VENDOR_DLKM_PROP += $(DEVICE_PATH)/config/prop/vendor_dlkm.prop
 
 # Inherit the proprietary files
 include vendor/TECNO/KH7n/BoardConfigVendor.mk
