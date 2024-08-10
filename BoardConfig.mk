@@ -140,5 +140,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/prop/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/config/prop/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
 
+BUILD_BROKEN_DUP_RULES := true 
+
 # Inherit the proprietary files
 include vendor/TECNO/KH7n/BoardConfigVendor.mk
