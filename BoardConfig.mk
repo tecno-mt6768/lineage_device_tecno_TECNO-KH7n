@@ -130,9 +130,9 @@ TARGET_NO_RECOVERY  := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # VINTF
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/config/manifest/framework_compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/config/manifest/manifest.xml
-DEVICE_MATRIX_FILE := $(CONFIGS_PATH)/config/manifest/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/manifest/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/config/manifest/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/config/manifest/compatibility_matrix.xml
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/prop/system.prop
