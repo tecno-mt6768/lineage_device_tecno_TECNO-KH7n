@@ -132,7 +132,7 @@ TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
 
 BUILD_BROKEN_DUP_RULES := true 
 
-#USE_NINJA := false
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Inherit the proprietary files
 include vendor/TECNO/KH7n/BoardConfigVendor.mk
