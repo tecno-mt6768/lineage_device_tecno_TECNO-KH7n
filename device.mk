@@ -85,8 +85,8 @@ PRODUCT_PACKAGES += \
     libmtk_bsg \
     libmtk_bsg.recovery
 
-# API levels
-PRODUCT_SHIPPING_API_LEVEL := 31
+# Runtime Resource (RRO) Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
