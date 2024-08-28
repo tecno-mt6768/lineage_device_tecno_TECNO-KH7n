@@ -149,14 +149,13 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/manifest/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/config/manifest/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/config/manifest/compatibility_matrix.xml
+BUILD_BROKEN_DUP_RULES := true 
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/prop/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/prop/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/config/prop/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
-
-BUILD_BROKEN_DUP_RULES := true 
 
 # Inherit the proprietary files
 include vendor/TECNO/KH7n/BoardConfigVendor.mk
