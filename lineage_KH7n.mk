@@ -14,13 +14,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from KH7n device
 $(call inherit-product, device/TECNO/KH7n/device.mk)
 
-
-# AfterLife flags
-AFTERLIFE_MAINTAINER := Isus203 (@isus203)
-
-# Gapps/Vanilla Flags
-AFTERLIFE_GAPPS=true
-
 PRODUCT_BRAND := TECNO
 PRODUCT_DEVICE := KH7n
 PRODUCT_NAME := lineage_KH7n

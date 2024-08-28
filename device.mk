@@ -28,34 +28,6 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vendor \
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2408
-TARGET_SCREEN_WIDTH := 1080
-
-# Fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
-
-# Health Hal
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
-    
-# Bootctrl
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl \
-    android.hardware.boot@1.2-impl.recovery \
-    android.hardware.boot@1.2-service
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctrl
-
-# MTK PlPath Utils
-PRODUCT_PACKAGES += \
-    mtk_plpath_utils \
-    mtk_plpath_utils.recovery
-
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -78,14 +50,43 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+    
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2408
+TARGET_SCREEN_WIDTH := 1080
 
-# API
-#BOARD_API_LEVEL := 31
-#BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
-#PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
-# Shipping API level
-#PRODUCT_TARGET_VNDK_VERSION := $(BOARD_API_LEVEL)
+# Fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    fastbootd
+
+# Health Hal
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+    
+# Bootctrl
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-impl.recovery \
+    android.hardware.boot@1.2-service
+
+# MTK PlPath Utils
+PRODUCT_PACKAGES += \
+    mtk_plpath_utils \
+    mtk_plpath_utils.recovery
+
+PRODUCT_PACKAGES += \
+    libmtk_bsg \
+    libmtk_bsg.recovery
+
+# API levels
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -138,7 +139,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(DEVICE_PATH) \
+    hardware/mediatek
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/TECNO/KH7n/KH7n-vendor.mk)
