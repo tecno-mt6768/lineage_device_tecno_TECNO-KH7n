@@ -139,6 +139,9 @@ TARGET_COPY_OUT_VENDOR     := vendor
 # Display
 TARGET_SCREEN_DENSITY := 480
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2023-09-01
+
 # Recovery
 TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/rootdir/etc/init.recovery.mt6768.rc
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
