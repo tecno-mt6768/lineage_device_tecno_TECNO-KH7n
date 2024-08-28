@@ -81,10 +81,6 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
-PRODUCT_PACKAGES += \
-    libmtk_bsg \
-    libmtk_bsg.recovery
-
 # Runtime Resource (RRO) Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
