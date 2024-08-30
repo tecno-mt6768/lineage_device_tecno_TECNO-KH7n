@@ -85,7 +85,7 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils.recovery
 
 # Runtime Resource (RRO) Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
+#PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
