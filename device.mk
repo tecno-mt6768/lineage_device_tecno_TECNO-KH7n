@@ -84,9 +84,6 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
-# Runtime Resource (RRO) Overlays
-#PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -135,11 +132,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
-
-# Soong namespaces
-#PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH) \
-    hardware/mediatek
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/TECNO/KH7n/KH7n-vendor.mk)
