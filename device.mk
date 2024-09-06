@@ -99,7 +99,7 @@ PRODUCT_BOOT_JARS += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.insmod.sh \
+    init.insmod.sh
 
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
