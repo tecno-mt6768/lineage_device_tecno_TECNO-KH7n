@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/TECNO/KH7n
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -54,8 +56,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-lineage
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -128,7 +130,7 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/TECNO/KH7n/KH7n-vendor.mk)
