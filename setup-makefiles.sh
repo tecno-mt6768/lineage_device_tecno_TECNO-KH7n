@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=FULL-64
-VENDOR=tecno
+DEVICE=KH7n
+VENDOR=TECNO
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

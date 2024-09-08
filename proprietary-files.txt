@@ -1,6 +1,8 @@
 # Unpinned blobs from sys_tssi_64_tecno-user 12 SP1A.210812.016 585038 release-keys
 
 # MTK-IMS
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
 bin/vtservice
 etc/init/init.vtservice.rc
 -framework/mediatek-common.jar

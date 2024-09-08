@@ -55,6 +55,7 @@ TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
@@ -128,6 +129,16 @@ PRODUCT_PACKAGES += \
     meta_init.vendor.rc \
     multi_init.rc \
     init.recovery.mt6768.rc
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+    hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/transsion
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
