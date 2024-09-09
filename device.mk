@@ -128,6 +128,9 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     meta_init.vendor.rc \
     multi_init.rc \
+    ueventd.mt6768.rc
+
+PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
 
 # Soong namespaces
@@ -137,9 +140,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/transsion
-
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/TECNO/KH7n/KH7n-vendor.mk)
