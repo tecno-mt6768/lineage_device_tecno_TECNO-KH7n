@@ -90,6 +90,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FMRadio
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
