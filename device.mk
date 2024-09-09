@@ -56,6 +56,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
