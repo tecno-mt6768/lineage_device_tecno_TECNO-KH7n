@@ -13,6 +13,13 @@ sh_binary {
 
 // Init configuration files
 prebuilt_etc {
+    name: "init_connectivity.rc",
+    src: "etc/init/hw/init_connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
     name: "factory_init.connectivity.common.rc",
     src: "etc/init/hw/factory_init.connectivity.common.rc",
     sub_dir: "init/hw",
