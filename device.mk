@@ -91,6 +91,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
