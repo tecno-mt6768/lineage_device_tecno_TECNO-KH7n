@@ -13,6 +13,11 @@ AB_OTA_UPDATER := true
 TARGET_BOOTLOADER_BOARD_NAME := KH7n
 TARGET_NO_BOOTLOADER := true
 
+# Broken Rules
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 # Platform
 BOARD_USES_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6768
@@ -155,8 +160,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/prop/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/prop/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/config/prop/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
-
-BUILD_BROKEN_DUP_RULES := true
 
 # Inherit the proprietary files
 include vendor/TECNO/KH7n/BoardConfigVendor.mk
