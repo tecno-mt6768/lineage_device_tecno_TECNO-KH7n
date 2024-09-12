@@ -173,3 +173,9 @@ prebuilt_etc {
     vendor: true,
     ramdisk_available: true,
 }
+
+prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "etc/fstab.enableswap",
+    vendor: true
+}
