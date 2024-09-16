@@ -17,6 +17,7 @@ Front-camera | 32 MP, Built-in flash
 Bluetooth | 5.0 
 Wi-Fi | 802.11 a/b/g/n  2.4 GHz, 5 GHz
 
+
 ```
 #
 # Copyright (C) 2024 The LineageOS Project
