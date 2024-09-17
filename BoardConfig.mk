@@ -24,6 +24,9 @@ TARGET_BOARD_PLATFORM := mt6768
 PRODUCT_PLATFORM := mt6768
 TARGET_USES_UEFI := true
 
+# Audio 
+BOARD_USES_ALSA_AUDIO := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -156,10 +159,14 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/config/manifest/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/config/manifest/compatibility_matrix.xml
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/prop/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/prop/vendor.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/config/prop/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/properties/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/config/properties/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/properties/system_ext.prop
+
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
