@@ -197,5 +197,25 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/config/nfc/libnfc-slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-slm.conf \
     $(DEVICE_PATH)/config/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
     
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.allocator@1.0 \
+    android.hidl.base@1.0.vendor \
+    android.hidl.allocator@1.0.vendor \
+    android.hidl.momery.token@1.0 \
+    android.hidl.momery@1.0 \
+    android.hidl.token@1.0 \
+    android.hidl.manager@1.0 \
+    libhidltransport \
+    libhidlmemory.vendor \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+    
+# schedulerservice
+PRODUCT_PACKAGES += \
+    android.frameworks.schedulerservice@1.0 \
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/TECNO/KH7n/KH7n-vendor.mk)
