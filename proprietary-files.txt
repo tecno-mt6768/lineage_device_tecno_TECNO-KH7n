@@ -1,10 +1,6 @@
 # Unpinned blobs from sys_tssi_64_tecno-user 12 SP1A.210812.016 585038 release-keys
 
 # MTK-IMS
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-bin/vtservice
-etc/init/init.vtservice.rc
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
 -framework/mediatek-ims-base.jar
@@ -12,29 +8,36 @@ etc/init/init.vtservice.rc
 -framework/mediatek-telecom-common.jar
 -framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
--framework/mediatek-wfo-legacy.jar
-lib/libmtk_vt_wrapper.so
-lib/libmtkperf_client.so
-lib/libvcodec_cap.so
-lib/libvcodec_capenc.so
-lib/libsysenv_system.so
-lib64/libcomutils.so
-lib64/libimsma.so
-lib64/libimsma_adapt.so
-lib64/libimsma_rtp.so
-lib64/libimsma_socketwrapper.so
-lib64/libmtk_vt_service.so
-lib64/libmtk_vt_wrapper.so
-lib64/libmtkperf_client.so
-lib64/libsignal.so
-lib64/libsink.so
-lib64/libsource.so
-lib64/libvcodec_cap.so
-lib64/libvcodec_capenc.so
-lib64/libvt_avsync.so
-lib64/libsysenv_system.so
 -priv-app/ImsService/ImsService.apk
+
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
+
+system_ext/lib/libmtk_vt_wrapper.so
+system_ext/lib/libmtkperf_client.so
+system_ext/lib/libvcodec_cap.so
+system_ext/lib/libvcodec_capenc.so
+system_ext/lib/libvsim-adaptor-client.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libmtkperf_client.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libsysenv_system.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvsim-adaptor-client.so
+system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Audio
@@ -100,22 +103,6 @@ vendor/lib64/libdts-eagle-shared.so
 vendor/lib64/libvibrator.so
 
 # Audio configs
-etc/audio_effects.conf
-system_ext/etc/a2dp_audio_policy_configuration.xml
-system_ext/etc/a2dp_in_audio_policy_configuration.xml
-system_ext/etc/audio_policy_configuration.xml
-system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-system_ext/etc/audio_policy_configuration_stub.xml
-system_ext/etc/audio_policy_engine_configuration.xml
-system_ext/etc/audio_policy_engine_default_stream_volumes.xml
-system_ext/etc/audio_policy_engine_product_strategies.xml
-system_ext/etc/audio_policy_engine_stream_volumes.xml
-system_ext/etc/audio_policy_volumes.xml
-system_ext/etc/bluetooth_audio_policy_configuration.xml
-system_ext/etc/default_volume_tables.xml
-system_ext/etc/hearing_aid_audio_policy_configuration.xml
-system_ext/etc/r_submix_audio_policy_configuration.xml
-system_ext/etc/usb_audio_policy_configuration.xml
 vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/a2dp_in_audio_policy_configuration.xml
 vendor/etc/audio_effects.xml
@@ -284,7 +271,6 @@ vendor/etc/init/android.hardware.boot@1.2-service.rc
 vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
 
 # Camera
-system_ext/app/CalibrationTool2/lib/arm64/libcalibverifyW_T.so
 system_ext/lib64/libarcsoft_chart_free_calibration.so
 system_ext/lib64/libarcsoft_dualcam_wt_calibration.so
 system_ext/lib64/libarcsoft_dualcam_wt_verification.so

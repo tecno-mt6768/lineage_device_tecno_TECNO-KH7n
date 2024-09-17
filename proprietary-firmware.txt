@@ -1,0 +1,13 @@
+# Firmware - from Tecno Spark 9 Pro - KH7n-H6919DE-S-OP-230611V978 - kh7n_h6919
+
+preloader_kh7n_h6919.bin:preloader.img;AB
+logo.bin:logo.img;AB
+tee.img;AB
+scp.img;AB
+sspm.img;AB
+lk.img;AB
+spmfw.img;AB
+md1img.img;AB
+tkv.img;AB
+gz.img;AB
+tranfs.img;AB
