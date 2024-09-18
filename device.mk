@@ -203,8 +203,6 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
-    android.hidl.momery.token@1.0 \
-    android.hidl.momery@1.0 \
     android.hidl.token@1.0 \
     android.hidl.manager@1.0 \
     libhidltransport \
