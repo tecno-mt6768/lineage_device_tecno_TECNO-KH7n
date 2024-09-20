@@ -184,9 +184,11 @@ include $(DEVICE_PATH)/vendor_logtag.mk
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/config/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Wifi
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/config/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-    
+
+# Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/config/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
