@@ -74,10 +74,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    FrameworksResKH7n \
+    FrameworksResOverlayKH7n \
     SettingsResOverlayKH7n \
-    SystemUIResKH7n \
-    TelephonyResKH7n \
+    SystemUIResOverlayKH7n \
+    TelephonyResOverlayKH7n \
     WifiResOverlayKH7n
 
 # Fastbootd
