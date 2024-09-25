@@ -8,7 +8,6 @@ Basic   | Spec Sheet
 CPU     | Mediatek  Helio G85 
 GPU     | Mali-G52 MC2 1.0 GHz
 Memory  | 4GB
-Android Version | 12
 Storage | 128GB
 Battery | Li-polymer 5000 mAh
 Display | 6.58, 2408x1080, 60 Hz
