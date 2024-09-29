@@ -186,7 +186,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     libdrm.vendor \
     libhwc2on1adapter \
-    libhwc2onfbadapter.vendor \
     libutils-v32
     
 # DRM
