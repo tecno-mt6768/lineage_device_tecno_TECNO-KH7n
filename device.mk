@@ -78,6 +78,7 @@ PRODUCT_PACKAGES += \
     SettingsResOverlayKH7n \
     SystemUIResOverlayKH7n \
     TelephonyResOverlayKH7n \
+    PowerOffAlarmOverlayKH7n \
     WifiResOverlayKH7n
 
 # Fastbootd
