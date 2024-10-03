@@ -161,7 +161,6 @@ ro.rlk_multi_gsensor_support=1
 ro.setupwizard.rotation_locked=true
 ro.side_fingerprint_support=1
 ro.sleep_master=1
-ro.support_one_handed_mode=1
 ro.tapping_wake_support=1
 ro.teop.support=1
 ro.tgpa.support=1
