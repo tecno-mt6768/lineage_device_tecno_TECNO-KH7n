@@ -20,6 +20,9 @@ PRODUCT_NAME := lineage_KH7n
 PRODUCT_MODEL := Tecno Spark 9 Pro
 PRODUCT_MANUFACTURER := Tecno Mobility Limited
 
+# GMS
+WITH_GMS := true
+TARGET_CORE_GMS := true
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
 
 TARGET_VENDOR := TECNO
@@ -35,13 +38,6 @@ BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/240416V962:user
 
 # Rising Stuff
 RISING_MAINTAINER=isus203
-WITH_GMS := true
-TARGET_CORE_GMS := true
-PRODUCT_PACKAGES += \
-   MarkupGoogle \
-   LatinIMEGooglePrebuilt \
-   Velvet \
-   PrebuiltDeskClockGoogle
 
 PRODUCT_NO_CAMERA := false
 TARGET_BOOT_ANIMATION_RES := 1080
