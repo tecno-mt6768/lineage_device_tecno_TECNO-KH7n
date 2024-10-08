@@ -20,8 +20,10 @@ PRODUCT_NAME := lineage_KH7n
 PRODUCT_MODEL := Tecno Spark 9 Pro
 PRODUCT_MANUFACTURER := Tecno Mobility Limited
 
+# GMS - Google service
 WITH_GMS := true
 TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
 PRODUCT_GMS_CLIENTID_BASE := android-tecno
 
 TARGET_VENDOR := TECNO
@@ -33,4 +35,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sys_tssi_64_tecno-user 12 SP1A.210812.016 585038 release-keys"
 
 BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/240416V962:user/release-keys
-
