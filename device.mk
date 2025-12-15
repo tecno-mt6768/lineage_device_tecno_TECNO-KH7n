@@ -74,11 +74,12 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayKH7n \
     SettingsResOverlayKH7n \
     SystemUIResOverlayKH7n \
     TelephonyResOverlayKH7n \
     PowerOffAlarmOverlayKH7n \
+    FrameworksResOverlayKH7n \
+    SettingsProviderOverlayKH7n \
     WifiResOverlayKH7n
 
 # Fastbootd
@@ -116,11 +117,11 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
-    mediatek-framework \
     mediatek-ims-base \
+    mediatek-framework \
     mediatek-ims-common \
-    mediatek-telecom-common \
     mediatek-telephony-base \
+    mediatek-telecom-common \
     mediatek-telephony-common
     
 # Mtk InCallService
@@ -295,17 +296,9 @@ PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(DEVICE_PATH)/config/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
-# Power configurations
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/config/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/config/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-# Wifi
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/config/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -338,16 +331,6 @@ PRODUCT_PACKAGES += \
 # schedulerservice
 PRODUCT_PACKAGES += \
     android.frameworks.schedulerservice@1.0 \
-
-# Recovery
-PRODUCT_PACKAGES += \
-    fstab.mt6768.ramdisk \
-    init.recovery.usb.rc \
-    init.recovery.mt6768.rc
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_RECOVERY_FW_PATH)/Conf_MultipleTest.ini:recovery/root/vendor/firmware/Conf_MultipleTest.ini \
-    $(COMMON_RECOVERY_FW_PATH)/focaltech_ts_fw.bin:recovery/root/vendor/firmware/focaltech_ts_fw.bin
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -416,6 +399,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
     libmtkperf_client
+    
+# Power configurations
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/config/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
     
 # Radio
 PRODUCT_PACKAGES += \
@@ -496,6 +483,9 @@ PRODUCT_PACKAGES += \
     libutils-v32
     
 # Wi-Fi
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/config/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+    
 PRODUCT_PACKAGES += \
     libwifi-hal-wrapper \
     android.hardware.wifi-service \
@@ -512,6 +502,16 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.transsion
+
+# Recovery
+PRODUCT_PACKAGES += \
+    fstab.mt6768.ramdisk \
+    init.recovery.usb.rc \
+    init.recovery.mt6768.rc
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_RECOVERY_FW_PATH)/Conf_MultipleTest.ini:recovery/root/vendor/firmware/Conf_MultipleTest.ini \
+    $(COMMON_RECOVERY_FW_PATH)/focaltech_ts_fw.bin:recovery/root/vendor/firmware/focaltech_ts_fw.bin
 
 # Properties
 include $(DEVICE_PATH)/config/properties/vendor_logtag.mk
