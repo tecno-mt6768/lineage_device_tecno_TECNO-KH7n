@@ -15,7 +15,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from KH7n device
-# УБЕДИТЕСЬ, ЧТО ПАПКА НАЗЫВАЕТСЯ TECNO, А ФАЙЛ device.mk
 $(call inherit-product, device/TECNO/KH7n/device.mk)
 
 DEVICE_MAINTAINER := isus203
@@ -39,10 +38,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=TECNO-KH7n \
     PRIVATE_BUILD_DESC="sys_tssi_64_tecno-user 12 SP1A.210812.016 585038 release-keys"
 
-BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/240416V962:user/release-keys
+BUILD_FINGERPRINT := TECNO/KH7n/lineage_KH7n:12/SP1A.210812.016/240416V962:user/release-keys
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=TECNO-KH7n \
-    PRODUCT_NAME=KH7n-OP \
+    TARGET_DEVICE=lineage_KH7n \
     PRIVATE_BUILD_DESC="sys_tssi_64_tecno-user 12 SP1A.210812.016 585038 release-keys"
 
-BUILD_FINGERPRINT := TECNO/KH7n-OP/TECNO-KH7n:12/SP1A.210812.016/240416V962:user/release-keys
+BUILD_FINGERPRINT := TECNO/KH7n/lineage_-KH7n:12/SP1A.210812.016/240416V962:user/release-keys
