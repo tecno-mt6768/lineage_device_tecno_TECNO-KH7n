@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_KH7n.mk
+    $(LOCAL_DIR)/lineage-KH7n.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_KH7n-user \
-    lineage_KH7n-userdebug \
-    lineage_KH7n-eng
+    lineage-KH7n-user \
+    lineage-KH7n-userdebug \
+    lineage-KH7n-eng
