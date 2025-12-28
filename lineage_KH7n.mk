@@ -23,7 +23,7 @@ PRODUCT_BRAND := TECNO
 PRODUCT_DEVICE := KH7n
 PRODUCT_NAME := lineage_KH7n
 PRODUCT_MODEL := Tecno Spark 9 Pro
-PRODUCT_MANUFACTURER := Tecno
+PRODUCT_MANUFACTURER := Tecno Mobility Limited
 
 # GMS - Google service
 WITH_GMS := true
