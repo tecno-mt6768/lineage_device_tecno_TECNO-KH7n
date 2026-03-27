@@ -165,6 +165,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/lineage/interfaces/power-libperfmgr \
+    hardware/lineage/interfaces \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/transsion
