@@ -52,13 +52,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
-TARGET_IS_64_BIT := true
-# TARGET_USES_64_BIT_BINDER := true
-
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_KH7n
-TARGET_RECOVERY_DEVICE_MODULES := libinit_KH7n
-
 # Boot/Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=fastboot
@@ -173,9 +166,9 @@ BOARD_ROOT_EXTRA_FOLDERS += metadata tranfs
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-# SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-# SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
-# BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -203,10 +196,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
-
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/gesture_function"
-TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-transsion
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X

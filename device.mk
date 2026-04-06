@@ -82,6 +82,14 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayKH7n \
     WifiResOverlayKH7n
 
+# IMS
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
+
+# Lineage-Specific Overlays
+PRODUCT_PACKAGES += \
+    ApertureOverlay
+
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
@@ -113,20 +121,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_CHARACTERISTICS := default
 
 PRODUCT_FULL_TREBLE_OVERRIDE := true
-
-# IMS
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-ims-base \
-    mediatek-framework \
-    mediatek-ims-common \
-    mediatek-telephony-base \
-    mediatek-telecom-common \
-    mediatek-telephony-common
-    
-# Mtk InCallService
-PRODUCT_PACKAGES += \
-    MtkInCallService
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -163,9 +157,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek \
+    hardware/mediatek/libaedv \
     hardware/mediatek/libmtkperf_client \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/lineage/interfaces \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/transsion

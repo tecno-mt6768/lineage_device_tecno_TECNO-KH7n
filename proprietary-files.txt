@@ -2,16 +2,6 @@
 
 # System
 
-# MTK-IMS
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
--priv-app/ImsService/ImsService.apk
-
 # Charger
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
@@ -58,33 +48,6 @@ lib64/vendor.mediatek.hardware.pq@2.8.so
 
 # System_ext
 
-# Vtservice
-system_ext/bin/vtservice
-system_ext/etc/init/init.vtservice.rc
-system_ext/lib/libmtk_vt_wrapper.so
-system_ext/lib/libmtkperf_client.so
-system_ext/lib/libvcodec_cap.so
-system_ext/lib/libvcodec_capenc.so
-system_ext/lib/libvsim-adaptor-client.so
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/libcomutils.so
-system_ext/lib64/libimsma_adapt.so
-system_ext/lib64/libimsma_rtp.so
-system_ext/lib64/libimsma_socketwrapper.so
-system_ext/lib64/libimsma.so
-system_ext/lib64/libmtk_vt_service.so
-system_ext/lib64/libmtk_vt_wrapper.so
-system_ext/lib64/libmtkperf_client.so
-system_ext/lib64/libsignal.so
-system_ext/lib64/libsink.so
-system_ext/lib64/libsource.so
-system_ext/lib64/libsysenv_system.so
-system_ext/lib64/libvcodec_cap.so
-system_ext/lib64/libvcodec_capenc.so
-system_ext/lib64/libvsim-adaptor-client.so
-system_ext/lib64/libvt_avsync.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
 # Bluetooth (A2DP)
 system_ext/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 system_ext/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
@@ -130,10 +93,6 @@ system_ext/lib/vendor.mediatek.hardware.mtkpower@1.2.so
 system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
 system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
-
-# Radio (IMS)
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Vendor 
 
