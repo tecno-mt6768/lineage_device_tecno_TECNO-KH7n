@@ -85,10 +85,13 @@ PRODUCT_PACKAGES += \
 # IMS
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
+PRODUCT_PACKAGES += \
+    mtk-ims \
+    mtk-ims-telephony
+
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlay
-
 
 # Fastbootd
 PRODUCT_PACKAGES += \
