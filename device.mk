@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 # Lineage-Specific Overlays
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     ApertureOverlay
 
 # Fastbootd
